@@ -23,12 +23,6 @@ public class JListDemo {
 
             String[] items = new String[translator.getLanguageCodes().size()];
 
-            JComboBox<String> languageComboBox = new JComboBox<>();
-            int i = 0;
-            for(String langaugeCode : translator.getLanguageCodes()) {
-                items[i++] = langaugeCode;
-            }
-
             // create the JList with the array of strings and set it to allow multiple
             // items to be selected at once.
             JList<String> list = new JList<>(items);
